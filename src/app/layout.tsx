@@ -13,9 +13,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body className={spaceMono.className}>
-        <main className="flex h-screen items-center justify-center bg-emerald-100">
-          <div className="mx-auto flex max-w-screen-md flex-1 flex-col px-4">
-            <div className="grid w-full flex-1 rounded-3xl bg-white p-8 shadow-lg">{children}</div>
+        <main className="flex items-center justify-center h-screen bg-emerald-100">
+          <div className="flex flex-col flex-1 max-w-screen-md px-4 mx-auto">
+            <div className="grid flex-1 w-full p-8 bg-white shadow-lg rounded-3xl">{children}</div>
           </div>
         </main>
       </body>
